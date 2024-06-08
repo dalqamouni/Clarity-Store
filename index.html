@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>مسنودع ادويه الوضوح</title>
 
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Clarity Store.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-      .container {
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        color: white; /* Assuming text needs to be white for visibility on the background */
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      /* Mobile styles */
-      @media (max-width: 600px) {
         .container {
-          padding: 10px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white; /* Assuming text needs to be white for visibility on the background */
         }
 
-        h1 {
-          font-size: 1.5em;
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
-        p {
-          font-size: 1em;
-        }
-      }
+        /* Mobile styles */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
 
-      /* Tablet styles */
-      @media (min-width: 601px) and (max-width: 900px) {
-        .container {
-          padding: 15px;
-        }
+            h1 {
+                font-size: 1.5em;
+            }
 
-        h1 {
-          font-size: 2em;
-        }
-
-        p {
-          font-size: 1.2em;
-        }
-      }
-
-      /* Desktop styles */
-      @media (min-width: 901px) {
-        .container {
-          padding: 20px;
+            p {
+                font-size: 1em;
+            }
         }
 
-        h1 {
-          font-size: 2.5em;
+        /* Tablet styles */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
         }
 
-        p {
-          font-size: 1.5em;
+        /* Desktop styles */
+        @media (min-width: 901px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
         }
-      }
     </style>
-  </head>
-  <body id="bg_img">
+</head>
+<body>
 
-    <div class="container">
-      <h1>مرحبًا بكم في مسنودع ادويه الوضوح</h1>
-      <p>هذا النص هو مجرد مثال لتوضيح تأثير التصميم المستجيب.</p>
-      <img src="example.jpg" alt="Example Image">
-    </div>
+<div class="container">
+    <h1>مرحبًا بكم في مسنودع ادويه الوضوح</h1>
+    <p>هذا النص هو مجرد مثال لتوضيح تأثير التصميم المستجيب.</p>
+    <img src="example.jpg" alt="Example Image">
+</div>
 
-    <script type="text/javascript" charset="utf-8">
-      (function (g, e, n, es, ys) {
+<script type="text/javascript" charset="utf-8">
+    (function (g, e, n, es, ys) {
         g['_genesysJs'] = e;
         g[e] = g[e] || function () {
-          (g[e].q = g[e].q || []).push(arguments)
+            (g[e].q = g[e].q || []).push(arguments)
         };
         g[e].t = 1 * new Date();
         g[e].c = es;
         ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
-      })(window, 'Genesys', 'https://apps.mypurecloud.de/genesys-bootstrap/genesys.min.js', {
+    })(window, 'Genesys', 'https://apps.mypurecloud.de/genesys-bootstrap/genesys.min.js', {
         environment: 'prod-euc1',
         deploymentId: '0e0127d0-f090-4dcf-b372-8d85d965658a'
-      });
-    </script>
+    });
+</script>
 
-    <script>
-      // Example JavaScript to add mobile-specific functionality
-      window.addEventListener('resize', function() {
+<script>
+    // Example JavaScript to add mobile-specific functionality
+    window.addEventListener('resize', function() {
         if (window.innerWidth < 600) {
-          document.body.style.backgroundColor = 'lightblue';
+            document.body.style.backgroundColor = 'lightblue';
         } else {
-          document.body.style.backgroundColor = '';
+            document.body.style.backgroundColor = '';
         }
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>
