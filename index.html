@@ -98,14 +98,31 @@
 </script>
 
 <script>
-    // Example JavaScript to add mobile-specific functionality
+    // Function to detect if the device is mobile
+    function isMobileDevice() {
+        return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+    }
+
+    // Apply specific styles or scripts based on the device
+    window.addEventListener('DOMContentLoaded', function() {
+        if (isMobileDevice()) {
+            document.body.style.backgroundColor = 'lightblue';
+            // Add any other mobile-specific functionality here
+        } else {
+            // Web-specific functionality
+            document.body.style.backgroundColor = '';
+        }
+    });
+
+    // Example JavaScript to add mobile-specific functionality on resize
     window.addEventListener('resize', function() {
-        if (window.innerWidth < 600) {
+        if (isMobileDevice() || window.innerWidth < 600) {
             document.body.style.backgroundColor = 'lightblue';
         } else {
             document.body.style.backgroundColor = '';
         }
     });
 </script>
+
 </body>
 </html>
