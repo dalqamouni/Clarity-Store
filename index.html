@@ -11,9 +11,10 @@
             margin: 0;
             padding: 0;
             background-image: url("./Clarity Store.jpg");
-            background-size: cover;
-            background-position: center;
+            background-size: contain; /* Ensure the entire image fits within the viewport */
+            background-position: top center; /* Align the image to the top center */
             background-repeat: no-repeat;
+            min-height: 100vh; /* Ensure the body covers the entire viewport height */
         }
 
         .container {
